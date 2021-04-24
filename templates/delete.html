@@ -15,12 +15,12 @@
 <h1>削除確認</h1>
 <p>本当に削除しますか？</p>
 <ul>
-    <li>内容： {{.todo.Text}}</li>
-    <li>状態： {{.todo.Status}}</li>
-    <li>作成時間： {{.todo.CreatedAt}}</li>
+    <li>内容： {{.post.Text}}</li>
+    <li>状態： {{.post.Status}}</li>
+    <li>作成時間： {{.post.CreatedAt}}</li>
 </ul>
 
-<form method="post" action="/delete/{{.todo.ID}}">
+<form method="post" action="/delete/{{.post.ID}}">
     <p><input type="submit" value="削除"></p>
     <p><a href="/">戻る</a></p>
 </form>

@@ -28,7 +28,7 @@
 </form>
 
 <ul>
-    {{ range .todos }}
+    {{ range .posts }}
         <li>内容：{{ .Text }}  状態：{{ .Status }}
             <label><a href="/detail/{{.ID}}">編集</a></label>
             <label><a href="/delete_check/{{.ID}}">削除</a></label>

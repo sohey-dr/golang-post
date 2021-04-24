@@ -1,16 +1,17 @@
 package route
 
 import (
-	"github.com/sohey-dr/golang-post/db"
 	"strconv"
+
+	"github.com/sohey-dr/golang-post/db"
 
 	"github.com/gin-gonic/gin"
 )
 
 func Index(ctx *gin.Context) {
-	todos := db.DbGetAll()
+	posts := db.DbGetAll()
 	ctx.HTML(200, "index.html", gin.H{
-		"todos": todos,
+		"posts": posts,
 	})
 }
 
@@ -27,8 +28,8 @@ func Detail(ctx *gin.Context) {
 	if err != nil {
 		panic(err)
 	}
-	todo := db.DbGetOne(id)
-	ctx.HTML(200, "detail.html", gin.H{"todo": todo})
+	post := db.DbGetOne(id)
+	ctx.HTML(200, "detail.html", gin.H{"post": post})
 }
 
 func Update(ctx *gin.Context) {
@@ -49,8 +50,8 @@ func DelConf(ctx *gin.Context) {
 	if err != nil {
 		panic("ERROR")
 	}
-	todo := db.DbGetOne(id)
-	ctx.HTML(200, "delete.html", gin.H{"todo": todo})
+	post := db.DbGetOne(id)
+	ctx.HTML(200, "delete.html", gin.H{"post": post})
 }
 
 func Delete(ctx *gin.Context) {
