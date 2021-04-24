@@ -1,4 +1,4 @@
-module iteatter
+module github.com/sohey-dr/golang-post
 
 go 1.12
 

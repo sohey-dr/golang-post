@@ -2,8 +2,8 @@ package route
 
 import (
 	"fmt"
-	"go_todo/db"
-	"go_todo/helper"
+	"github.com/sohey-dr/golang-post/db"
+	"github.com/sohey-dr/golang-post/helper"
 
 	"github.com/gin-gonic/gin"
 )

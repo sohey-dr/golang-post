@@ -1,8 +1,8 @@
 package main
 
 import (
-	"./db"
-	"./route"
+	"github.com/sohey-dr/golang-post/db"
+	"github.com/sohey-dr/golang-post/route"
 
 	"github.com/gin-gonic/gin"
 

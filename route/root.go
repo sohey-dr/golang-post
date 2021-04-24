@@ -1,7 +1,7 @@
 package route
 
 import (
-	"go_todo/db"
+	"github.com/sohey-dr/golang-post/db"
 	"strconv"
 
 	"github.com/gin-gonic/gin"
